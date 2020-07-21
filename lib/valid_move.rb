@@ -9,7 +9,8 @@
       elsif board[index] == "O"
         return true
       elsif board[index] == " " || "" || nil
-    end    return false 
+        return false
+      end  
         
      def valid_move?(board, index) 
       if position_taken?(board,index) == true && index.between?(0,8)
