@@ -11,11 +11,16 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-   if (board[index] == " ") || (board[index] == "") || (board[index] == nil)
+  
+    if board[index] == "X" 
+      return true 
+      
+    elsif board[index] == "O"
+       return true
+    
+    elsif board[index] == " " || "" || nil
       return false 
-   else
-      return true
-   end
-end
+    end   
+end 
 
 
